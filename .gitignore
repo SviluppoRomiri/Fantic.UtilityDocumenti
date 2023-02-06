@@ -1,0 +1,10 @@
+﻿################################################################################
+# Il file gitignore è stato creato automaticamente da Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/UtilityDocumenti/v16
+/.vs/UtilityOrdini/v16
+/obj
+/UtilityDocumenti.sln
+/UtilityDocumenti.vbproj.user
+/.vs/Fantic.UtilityDocumenti/v16

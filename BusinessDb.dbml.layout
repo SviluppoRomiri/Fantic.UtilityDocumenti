@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BusinessDb">
+  <DataContextMoniker Name="/BusinessDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bc0c256e-40d3-4d34-97e4-802d56524c9f" absoluteBounds="2.75, 0.5, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/BusinessDbDataContext/listini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="446fc2d1-dd63-455f-9655-e4e52dd3e830" absoluteBounds="2.7649999999999997, 0.96, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68c5a24e-67d8-48db-802f-77fe0b73339c" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BusinessDbDataContext/RDM_UTL_CambiaArtOrdini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e3f127f-c848-4144-8a38-668426ad2220" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f52660d6-8b6d-44ac-ad85-0c2e7aab863f" absoluteBounds="7.375, 3.25, 2, 4.8477197265625">
+      <DataClassMoniker Name="/BusinessDbDataContext/RDM_Param9100" />
+      <nestedChildShapes>
+        <elementListCompartment Id="149fdca6-a383-4140-814e-57b9345e161b" absoluteBounds="7.39, 3.71, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FANTIC" Class="BusinessDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.16.0.3\NTS;Initial Catalog=FANTIC;User ID=sa" SettingsObjectName="UtilityDocumenti.My.MySettings" SettingsPropertyName="FANTICConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.listini" Member="listini">
+    <Type Name="listini">
+      <Column Name="lc_codart" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_codlavo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="lc_conto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lc_codvalu" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="lc_codtpro" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="lc_listino" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="lc_datagg" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="lc_tipo" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_prezzo" Type="System.Decimal" DbType="Decimal(24,6) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_datscad" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="lc_daquant" Type="System.Decimal" DbType="Decimal(27,9) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_aquant" Type="System.Decimal" DbType="Decimal(27,9) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_perqta" Type="System.Decimal" DbType="Decimal(27,9) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_unmis" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_note" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="lc_netto" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="codditt" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_progr" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="lc_fase" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="lc_ultagg" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="lc_codcas" Type="System.String" DbType="NVarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="lc_coddest" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lc_hhflricisp" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RDM_UTL_CambiaArtOrdini" Member="RDM_UTL_CambiaArtOrdini">
+    <Type Name="RDM_UTL_CambiaArtOrdini">
+      <Column Name="mo_tipork" Type="System.String" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="mo_anno" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="mo_serie" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="mo_numord" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mo_riga" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RDM_Param9100" Member="RDM_Param9100">
+    <Type Name="RDM_Param9100">
+      <Column Name="TipoDod" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="AnnoDoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SerieDoc" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="NumDoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RigaDoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataDoc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AnnoData" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MeseData" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodConto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodArticolo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CodCausale" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DescCausale" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="QtaFat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValoreFatEuro" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="CmeFatt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AnnoRif" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RifAlfabetico" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NumRif" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QtaCmp" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValoreCmp" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Cmp" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
